@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Version Control</title>
+    <!-- Link to the external CSS file using the <link> tag -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+ 
+</style>
+<body>
+    <div id="editor-container">
+        <h1> Simple Version Control Demo </h1>
+        <div id="text-area-container">
+          <textarea id="text-area" class="text-area"></textarea>
+          <br/>
+          <p id="message"></p>
+        </div>
+        <div id="panel">
+          <div id="button-panel">
+            <button id="load-button">Load</button>
+            <button id="save-button">Save</button>
+            <button id="commit-button">Commit</button>
+            <button id="view-history-button">View History</button>
+            <button id="create-branch-button">Create Branch</button>
+            <button id="switch-branch-button">Switch Branch</button>
+            <button id="merge-branch-button">Merge Branch</button>
+          </div>
+
+        </div>
+
+        <div id="commit-history"></div>
+        <div id="commit-content"></div>
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/redux@4.1.1/dist/redux.min.js"></script>
+    <script src="versionControl.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
